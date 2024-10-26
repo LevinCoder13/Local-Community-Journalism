@@ -1,0 +1,91 @@
+header {
+ 
+    width: 100%;
+    padding: 0px;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content:center ;
+  
+  }
+  
+  body {
+      background-color: rgb(98, 102, 138);
+      font-family: poppins;
+    }
+    .background-container {
+      background-color: #62668a;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-in-page-container {
+      height: 40vh;
+      width: 55%;
+      border-radius: 20px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      min-height: 450px;
+    }
+    .layer-1-container {
+      background-color: #626bbe;
+      width: 45%;
+      border-radius: 20px 0px 0px 20px;
+    }
+    .logo-img {
+      width: 50px;
+      margin: 20px;
+    }
+    .layer-1-heading {
+      color: aliceblue;
+      margin: 50px;
+    }
+    .layer-1-content {
+      margin: 20px;
+      font-size: 20;
+      color: white;
+    }
+    .layer-2-container {
+      background-color: rgb(255, 255, 255);
+      width: 55%;
+      border-radius: 0px 20px 20px 0px;
+    }
+    .layer-2-margin-container {
+      margin: 20px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
+    .create-account {
+      margin: none;
+    }
+    .input-field {
+      padding: 8px;
+      width: 80%;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid rgb(159, 153, 153);
+    }
+    .input-div {
+      padding: 0.8rem 0em;
+    }
+    #submit-button {
+      background-color: #626bbe;
+      border-radius: 10px;
+      padding: 10px 50px;
+      color: white;
+      border: none;
+      font-family: poppins;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .final-text {
+      margin: 10px 0px;
+    }
+    a {
+      text-decoration: none;
+    }
