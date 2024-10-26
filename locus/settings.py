@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-=-l#**$jv(z&)9cpcmakqq*#1ydy9bjg#zwt(dv2w)em#_lh5#
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "local-community-journalism.onrender.com"
+    "local-community-journalism.onrender.com",
+    "0.0.0.0"
 ]
 
 
