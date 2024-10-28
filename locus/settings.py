@@ -116,6 +116,9 @@ USE_I18N = True
 USE_TZ = True
 
 RUNSERVER_IP = '0.0.0.0'
+CSRF_TRUSTED_ORIGINS = ['https://local-community-journalism.onrender.com']
+SECURE_SSL_REDIRECT = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
