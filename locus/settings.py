@@ -117,7 +117,13 @@ USE_TZ = True
 
 RUNSERVER_IP = '0.0.0.0'
 CSRF_TRUSTED_ORIGINS = ['https://local-community-journalism.onrender.com']
-SECURE_SSL_REDIRECT = True
+
+# Trust the reverse proxy (Render) to determine if the request is HTTPS
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Disable Django's internal HTTPS redirection (Render handles it)
+SECURE_SSL_REDIRECT = False
 
 
 # Static files (CSS, JavaScript, Images)
