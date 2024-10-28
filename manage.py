@@ -15,10 +15,12 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
-    port = os.environ.get('PORT', '8000')  # Default to 8000 if PORT is not set
+    port = os.environ.get('PORT', '8000')
 
-    # # Append the `runserver` command with the correct host and port
-    sys.argv += ['runserver', '0.0.0.0:' + port]
+    # Check if the command is `runserver` and pass the correct argument
+    if sys.argv[1] == 'runserver':
+        sys.argv.append(f'0.0.0.0:{port}')
+    
     execute_from_command_line(sys.argv)
 
 
